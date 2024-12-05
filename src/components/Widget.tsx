@@ -33,10 +33,10 @@ export const Widget = () => {
       },
       subvariant: "custom",
       integrator: "fee-demo",
+      disabledUI: [DisabledUI.ToAddress],
       // BUG?
       // If ToAddress is disabled, tokens are sent to the source wallet
       // If ToAddress is enabled, tokens are sent to the deposit address
-      disabledUI: [DisabledUI.ToAddress],
       hiddenUI: [HiddenUI.Appearance, HiddenUI.Language, HiddenUI.ToAddress],
       useRecommendedRoute: true,
       theme: {
